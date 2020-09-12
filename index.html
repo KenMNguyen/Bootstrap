@@ -32,18 +32,19 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4">
-                    <button role="button" class="btn btn-lg btn-info text-nowrap" data-toggle="modal" data-target="#reserveModal" title="Or call us at <br /><strong>1-206-555-1234</strong>" type="submit">Reserve Campsite</button>
+                    <button role="button" class="btn btn-lg btn-info text-nowrap" data-toggle="modal" data-target="#reserveModal" type="submit">Reserve Campsite</button>
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- Reserve Modal -->
     <div class="modal" id="reserveModal">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+        <div class="modal-dialog modal-lg fade`" role="dialog">
+            <div class="modal-content" role="document">
                 <div class="modal-header bg-info text-white">
                     <h3 class="modal-title">Reserve a Campsite</h3>
-                    <button type="button" class="cancel" data-dismiss="modal" aria-label="Cancel">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cancel">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -72,7 +73,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label class="col-sm-6 col-form-label" for="campsite">Campsite Type</label>
+                            <label class="col-sm-6 col-form-label" for="siteType">Campsite Type</label>
                             <div class="col col-2 btn-group btn-group-toggle" data-toggle="buttons">
                                 <input id="siteTent" type="button" class="btn btn-success" name="siteType" value="Tent">
                                 <input id="siteRV" type="button" class="btn btn-primary" name="siteType" value="RV">
@@ -86,10 +87,6 @@
                             </div>
                         </div>
                     </form>
-                </div>
-    
-                <div class="modal-footer">
-    
                 </div>
     
             </div>
@@ -121,6 +118,7 @@
         </div>
     </nav>
 
+    <!-- Login modal -->
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -233,7 +231,6 @@
                     <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="Featured Campsites" />
                 </div>
             </div>
-
         </div>
 
         <div class="row row-content align-items-center">
@@ -251,45 +248,7 @@
             </div>
         </div>
 
-        <!--
-        <div class="row row-content align-items-center">
-            <div class="col-md-6 mx-auto">
-                <div class="card">
-                    <h3 class="card-header text-white bg-info">Reserve a Campsite</h3>
-                    <div class="card-body">
-                        <form id="reserveForm">
-                            <div class="form-group row">
-                                <label class="col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
-                                <div class="col">
-                                    <select class="form-control" name="numCampers" id="numCampers">
-                                        <option selected>Select...</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-sm-6 col-form-label" for="date">Date</label>
-                                <div class="col">
-                                    <input class="form-control" type="date" id="date" name="date">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col">
-                                    <button type="submit" class="btn btn-primary">Search</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        -->
+        
     </div>
 
     <footer class="site-footer">
