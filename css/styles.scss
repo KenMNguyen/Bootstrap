@@ -77,17 +77,13 @@ header {
 #reserveModal {
     .modal-header {
         background-color: $color-teal;
-        h2 {
-            color: white;
-        }
+        color: white;    
     }
 }
 
 #loginModal {
     .modal-header {
         background-color: $color-mid;
-        h3 {
-            color: white;
-        }
+        color: white;
     }
 }
