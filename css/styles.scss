@@ -76,8 +76,9 @@ header {
 
 #reserveModal {
     .modal-header {
+        background-color: $color-teal;
         h2 {
-            color: $color-teal;
+            color: white;
         }
     }
 }
